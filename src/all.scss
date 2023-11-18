@@ -1,0 +1,86 @@
+@font-face {
+  font-family: Noto sans;
+  src: Noto sans;
+  unicode-range: "U+4E00-9FFF";
+}
+
+@font-face {
+  font-family: jost;
+  src: jost;
+
+  unicode-range: U+00-024F;
+}
+
+@mixin s1440 {
+  @media (max-width: 1439px) {
+    @content;
+  }
+}
+@mixin s1024 {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin s768 {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin s480 {
+  @media (max-width: 479px) {
+    @content;
+  }
+}
+
+@font-face {
+  font-family: 'Mantou';
+  src: url("/src/assets/font/MantouSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*原本頁面的設定*/
+@import "./assets/css/topMenu.scss";
+@import "./assets/css/banner.scss";
+@import "./assets/css/footer.scss";
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Noto-sans, Jost;
+}
+#root {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: inter, Noto-sans, Jost;
+}
+#app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#content {
+  width: 100%;
+  background-color: rgb(248, 214, 139);
+  height: 1200px;
+}
